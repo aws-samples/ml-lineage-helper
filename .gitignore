@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__
+data/
+processing.py
+.ipynb_checkpoints/
+.vscode/
