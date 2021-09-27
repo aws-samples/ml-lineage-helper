@@ -8,7 +8,7 @@ setup(
     author="Bobby Lindsey",
     author_email="bwlind@amazon.com",
     license="Apache-2.0",
-    packages=["ml-lineage-helper"],
+    packages=["ml_lineage_helper"],
     install_requires=[
         "numpy",
         "boto3>=1.17.74",
