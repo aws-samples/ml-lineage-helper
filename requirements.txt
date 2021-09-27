@@ -1,0 +1,7 @@
+numpy
+boto3>=1.17.74
+sagemaker>2.49.1
+pandas
+networkx
+matplotlib
+numpy

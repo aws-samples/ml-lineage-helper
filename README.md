@@ -2,6 +2,10 @@
 
 This library is a wrapper around the SageMaker SDK to support ease of lineage tracking across the ML lifecycle. Lineage artifacts include data, code, feature groups, features in a feature group, feature group queries, training jobs, and models.
 
+## Install
+
+`pip install git+https://github.com/aws-samples/ml-lineage-helper`
+
 ## Usage
 
 Import `ml_lineage_helper`.
