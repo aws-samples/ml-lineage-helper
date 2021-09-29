@@ -32,6 +32,9 @@ class QueryLineage:
 
         Args:
             artifact_or_fg_arn (str): Artifact or Feature Group ARN
+            max_depth (int): max_depth controls the depth of the BFS search
+                             of the lineage graph. The higher the number, the
+                             wider you cast your net.
 
         Returns:
             data_source_df (pd.DataFrame): DataFrame containing data sources
@@ -105,6 +108,9 @@ class QueryLineage:
 
         Args:
             artifact_arn_or_model_name (str): Artifact ARN or SageMaker model name
+            max_depth (int): max_depth controls the depth of the BFS search
+                             of the lineage graph. The higher the number, the
+                             wider you cast your net.
 
         Returns:
             feature_groups_df (pd.DataFrame): DataFrame containing models
@@ -198,6 +204,9 @@ class QueryLineage:
 
         Args:
             artifact_or_fg_arn (str): Artifact or Feature Group ARN
+            max_depth (int): max_depth controls the depth of the BFS search
+                             of the lineage graph. The higher the number, the
+                             wider you cast your net.
 
         Returns:
             models_df (pd.DataFrame): DataFrame containing models
@@ -268,6 +277,9 @@ class QueryLineage:
 
         Args:
             artifact_arn_or_s3_uri (str): Artifact ARN or S3 URI of data source
+            max_depth (int): max_depth controls the depth of the BFS search
+                             of the lineage graph. The higher the number, the
+                             wider you cast your net.
 
         Returns:
             feature_group_df (pd.DataFrame): DataFrame containing Feature Groups
