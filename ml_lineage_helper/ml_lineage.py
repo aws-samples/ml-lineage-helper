@@ -653,7 +653,7 @@ class MLLineageHelper:
 
         for summary in Artifact.list():
             print(f"Deleting artifact {summary.artifact_arn} {summary.artifact_name}")
-            self.delete_associations(summary.artifact_arn, sagemaker_session)
+            self.delete_associations(summary.artifact_arn)
             artfct = Artifact(
                 artifact_arn=summary.artifact_arn,
                 sagemaker_session=self.sagemaker_session.session,
