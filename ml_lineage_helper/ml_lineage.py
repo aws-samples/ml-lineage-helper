@@ -642,13 +642,13 @@ class MLLineageHelper:
         for summary in Context.list():
             print(f"Deleting context {summary.context_name}")
             self.delete_associations(summary.context_arn)
-            ctx = Context(context_name=summary.context_name, self.sagemaker_session=sagemaker_session.session)
+            ctx = Context(context_name=summary.context_name, sagemaker_session=self.sagemaker_session.session)
             ctx.delete()
 
         for summary in Action.list():
             print(f"Deleting action {summary.action_name}")
             self.delete_associations(summary.action_arn)
-            actn = Action(action_name=summary.action_name, self.sagemaker_session=sagemaker_session.session)
+            actn = Action(action_name=summary.action_name, sagemaker_session=self.sagemaker_session.session)
             actn.delete()
 
         for summary in Artifact.list():
