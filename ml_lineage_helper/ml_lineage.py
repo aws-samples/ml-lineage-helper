@@ -637,7 +637,7 @@ class MLLineageHelper:
             assct.delete()
 
     def delete_lineage_data(self):
-        """Delete all lineage data.
+        """Delete ALL lineage data in your account.
         """
         for summary in Context.list():
             print(f"Deleting context {summary.context_name}")
